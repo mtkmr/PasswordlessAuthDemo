@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21050707EEDD2F2A8653B675 /* Pods_PasswordlessAuthDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7422F3940632A3C5F02D766 /* Pods_PasswordlessAuthDemoTests.framework */; };
+		7C087032B3F6482529FDCDFA /* Pods_PasswordlessAuthDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1286424301C997415B68B569 /* Pods_PasswordlessAuthDemo.framework */; };
+		8C3680A225DD79960095227B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3680A125DD79960095227B /* AppDelegate.swift */; };
+		8C3680A425DD79960095227B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3680A325DD79960095227B /* SceneDelegate.swift */; };
+		8C3680A625DD79960095227B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3680A525DD79960095227B /* WelcomeViewController.swift */; };
+		8C3680A925DD79960095227B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3680A725DD79960095227B /* Main.storyboard */; };
+		8C3680AB25DD79970095227B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C3680AA25DD79970095227B /* Assets.xcassets */; };
+		8C3680AE25DD79970095227B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3680AC25DD79970095227B /* LaunchScreen.storyboard */; };
+		8C3680B925DD79970095227B /* PasswordlessAuthDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3680B825DD79970095227B /* PasswordlessAuthDemoTests.swift */; };
+		8C3680C425DD79970095227B /* PasswordlessAuthDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3680C325DD79970095227B /* PasswordlessAuthDemoUITests.swift */; };
+		8C3680DB25DD7A250095227B /* SendEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3680DA25DD7A250095227B /* SendEmailViewController.swift */; };
+		8C3680E325DD7B320095227B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C3680E225DD7B320095227B /* GoogleService-Info.plist */; };
+		8C36811625DD83F60095227B /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C36811525DD83F60095227B /* Setup.swift */; };
+		FF37B3082F6683EF3EFFEE75 /* Pods_PasswordlessAuthDemo_PasswordlessAuthDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F132FD9AB7E05C6A1BB3A6D6 /* Pods_PasswordlessAuthDemo_PasswordlessAuthDemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C3680B525DD79970095227B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C36809625DD79960095227B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C36809D25DD79960095227B;
+			remoteInfo = PasswordlessAuthDemo;
+		};
+		8C3680C025DD79970095227B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C36809625DD79960095227B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C36809D25DD79960095227B;
+			remoteInfo = PasswordlessAuthDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		118DB517E01A9F9613F99929 /* Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests/Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1286424301C997415B68B569 /* Pods_PasswordlessAuthDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordlessAuthDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D687581610E5F36D6118264 /* Pods-PasswordlessAuthDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordlessAuthDemo.debug.xcconfig"; path = "Target Support Files/Pods-PasswordlessAuthDemo/Pods-PasswordlessAuthDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4706113E3604F711F7D1D6C6 /* Pods-PasswordlessAuthDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordlessAuthDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-PasswordlessAuthDemoTests/Pods-PasswordlessAuthDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8348BFD7C683FDCE95160A1B /* Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests/Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8C36809E25DD79960095227B /* PasswordlessAuthDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordlessAuthDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3680A125DD79960095227B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C3680A325DD79960095227B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8C3680A525DD79960095227B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8C3680A825DD79960095227B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C3680AA25DD79970095227B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C3680AD25DD79970095227B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C3680AF25DD79970095227B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C3680B425DD79970095227B /* PasswordlessAuthDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordlessAuthDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3680B825DD79970095227B /* PasswordlessAuthDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordlessAuthDemoTests.swift; sourceTree = "<group>"; };
+		8C3680BA25DD79970095227B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C3680BF25DD79970095227B /* PasswordlessAuthDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordlessAuthDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3680C325DD79970095227B /* PasswordlessAuthDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordlessAuthDemoUITests.swift; sourceTree = "<group>"; };
+		8C3680C525DD79970095227B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C3680DA25DD7A250095227B /* SendEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendEmailViewController.swift; sourceTree = "<group>"; };
+		8C3680E225DD7B320095227B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8C36810D25DD7FAA0095227B /* PasswordlessAuthDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PasswordlessAuthDemo.entitlements; sourceTree = "<group>"; };
+		8C36811525DD83F60095227B /* Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
+		B148F52295F78CF9BB54FAF6 /* Pods-PasswordlessAuthDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordlessAuthDemo.release.xcconfig"; path = "Target Support Files/Pods-PasswordlessAuthDemo/Pods-PasswordlessAuthDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C982268C5CBF76D746B0C44A /* Pods-PasswordlessAuthDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordlessAuthDemoTests.release.xcconfig"; path = "Target Support Files/Pods-PasswordlessAuthDemoTests/Pods-PasswordlessAuthDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E7422F3940632A3C5F02D766 /* Pods_PasswordlessAuthDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordlessAuthDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F132FD9AB7E05C6A1BB3A6D6 /* Pods_PasswordlessAuthDemo_PasswordlessAuthDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordlessAuthDemo_PasswordlessAuthDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C36809B25DD79960095227B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C087032B3F6482529FDCDFA /* Pods_PasswordlessAuthDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3680B125DD79970095227B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21050707EEDD2F2A8653B675 /* Pods_PasswordlessAuthDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3680BC25DD79970095227B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF37B3082F6683EF3EFFEE75 /* Pods_PasswordlessAuthDemo_PasswordlessAuthDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C36809525DD79960095227B = {
+			isa = PBXGroup;
+			children = (
+				8C3680A025DD79960095227B /* PasswordlessAuthDemo */,
+				8C36811425DD83E40095227B /* Helper */,
+				8C3680B725DD79970095227B /* PasswordlessAuthDemoTests */,
+				8C3680C225DD79970095227B /* PasswordlessAuthDemoUITests */,
+				8C36809F25DD79960095227B /* Products */,
+				9EEE47038101AB49EAA45135 /* Pods */,
+				BD7A753837735E0C85A9C53C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C36809F25DD79960095227B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C36809E25DD79960095227B /* PasswordlessAuthDemo.app */,
+				8C3680B425DD79970095227B /* PasswordlessAuthDemoTests.xctest */,
+				8C3680BF25DD79970095227B /* PasswordlessAuthDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C3680A025DD79960095227B /* PasswordlessAuthDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8C36810D25DD7FAA0095227B /* PasswordlessAuthDemo.entitlements */,
+				8C3680A125DD79960095227B /* AppDelegate.swift */,
+				8C3680A325DD79960095227B /* SceneDelegate.swift */,
+				8C3680A525DD79960095227B /* WelcomeViewController.swift */,
+				8C3680DA25DD7A250095227B /* SendEmailViewController.swift */,
+				8C3680A725DD79960095227B /* Main.storyboard */,
+				8C3680AA25DD79970095227B /* Assets.xcassets */,
+				8C3680AC25DD79970095227B /* LaunchScreen.storyboard */,
+				8C3680AF25DD79970095227B /* Info.plist */,
+				8C3680E225DD7B320095227B /* GoogleService-Info.plist */,
+			);
+			path = PasswordlessAuthDemo;
+			sourceTree = "<group>";
+		};
+		8C3680B725DD79970095227B /* PasswordlessAuthDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C3680B825DD79970095227B /* PasswordlessAuthDemoTests.swift */,
+				8C3680BA25DD79970095227B /* Info.plist */,
+			);
+			path = PasswordlessAuthDemoTests;
+			sourceTree = "<group>";
+		};
+		8C3680C225DD79970095227B /* PasswordlessAuthDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C3680C325DD79970095227B /* PasswordlessAuthDemoUITests.swift */,
+				8C3680C525DD79970095227B /* Info.plist */,
+			);
+			path = PasswordlessAuthDemoUITests;
+			sourceTree = "<group>";
+		};
+		8C36811425DD83E40095227B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8C36811525DD83F60095227B /* Setup.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		9EEE47038101AB49EAA45135 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D687581610E5F36D6118264 /* Pods-PasswordlessAuthDemo.debug.xcconfig */,
+				B148F52295F78CF9BB54FAF6 /* Pods-PasswordlessAuthDemo.release.xcconfig */,
+				118DB517E01A9F9613F99929 /* Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests.debug.xcconfig */,
+				8348BFD7C683FDCE95160A1B /* Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests.release.xcconfig */,
+				4706113E3604F711F7D1D6C6 /* Pods-PasswordlessAuthDemoTests.debug.xcconfig */,
+				C982268C5CBF76D746B0C44A /* Pods-PasswordlessAuthDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD7A753837735E0C85A9C53C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1286424301C997415B68B569 /* Pods_PasswordlessAuthDemo.framework */,
+				F132FD9AB7E05C6A1BB3A6D6 /* Pods_PasswordlessAuthDemo_PasswordlessAuthDemoUITests.framework */,
+				E7422F3940632A3C5F02D766 /* Pods_PasswordlessAuthDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C36809D25DD79960095227B /* PasswordlessAuthDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C3680C825DD79970095227B /* Build configuration list for PBXNativeTarget "PasswordlessAuthDemo" */;
+			buildPhases = (
+				32F6F26E148DF9E5A865AB9A /* [CP] Check Pods Manifest.lock */,
+				8C36809A25DD79960095227B /* Sources */,
+				8C36809B25DD79960095227B /* Frameworks */,
+				8C36809C25DD79960095227B /* Resources */,
+				B02BB10924E5FC913A141452 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordlessAuthDemo;
+			productName = PasswordlessAuthDemo;
+			productReference = 8C36809E25DD79960095227B /* PasswordlessAuthDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C3680B325DD79970095227B /* PasswordlessAuthDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C3680CB25DD79970095227B /* Build configuration list for PBXNativeTarget "PasswordlessAuthDemoTests" */;
+			buildPhases = (
+				D5BA1545159441B451FE5D46 /* [CP] Check Pods Manifest.lock */,
+				8C3680B025DD79970095227B /* Sources */,
+				8C3680B125DD79970095227B /* Frameworks */,
+				8C3680B225DD79970095227B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C3680B625DD79970095227B /* PBXTargetDependency */,
+			);
+			name = PasswordlessAuthDemoTests;
+			productName = PasswordlessAuthDemoTests;
+			productReference = 8C3680B425DD79970095227B /* PasswordlessAuthDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C3680BE25DD79970095227B /* PasswordlessAuthDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C3680CE25DD79970095227B /* Build configuration list for PBXNativeTarget "PasswordlessAuthDemoUITests" */;
+			buildPhases = (
+				D952EB3C2CA98F52DCAD0B9A /* [CP] Check Pods Manifest.lock */,
+				8C3680BB25DD79970095227B /* Sources */,
+				8C3680BC25DD79970095227B /* Frameworks */,
+				8C3680BD25DD79970095227B /* Resources */,
+				C051723BF1FFABA057AC4439 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C3680C125DD79970095227B /* PBXTargetDependency */,
+			);
+			name = PasswordlessAuthDemoUITests;
+			productName = PasswordlessAuthDemoUITests;
+			productReference = 8C3680BF25DD79970095227B /* PasswordlessAuthDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C36809625DD79960095227B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					8C36809D25DD79960095227B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					8C3680B325DD79970095227B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 8C36809D25DD79960095227B;
+					};
+					8C3680BE25DD79970095227B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 8C36809D25DD79960095227B;
+					};
+				};
+			};
+			buildConfigurationList = 8C36809925DD79960095227B /* Build configuration list for PBXProject "PasswordlessAuthDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C36809525DD79960095227B;
+			productRefGroup = 8C36809F25DD79960095227B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C36809D25DD79960095227B /* PasswordlessAuthDemo */,
+				8C3680B325DD79970095227B /* PasswordlessAuthDemoTests */,
+				8C3680BE25DD79970095227B /* PasswordlessAuthDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C36809C25DD79960095227B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3680E325DD7B320095227B /* GoogleService-Info.plist in Resources */,
+				8C3680AE25DD79970095227B /* LaunchScreen.storyboard in Resources */,
+				8C3680AB25DD79970095227B /* Assets.xcassets in Resources */,
+				8C3680A925DD79960095227B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3680B225DD79970095227B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3680BD25DD79970095227B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32F6F26E148DF9E5A865AB9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PasswordlessAuthDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B02BB10924E5FC913A141452 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PasswordlessAuthDemo/Pods-PasswordlessAuthDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PasswordlessAuthDemo/Pods-PasswordlessAuthDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PasswordlessAuthDemo/Pods-PasswordlessAuthDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C051723BF1FFABA057AC4439 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests/Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests/Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests/Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5BA1545159441B451FE5D46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PasswordlessAuthDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D952EB3C2CA98F52DCAD0B9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C36809A25DD79960095227B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3680A625DD79960095227B /* WelcomeViewController.swift in Sources */,
+				8C3680DB25DD7A250095227B /* SendEmailViewController.swift in Sources */,
+				8C3680A225DD79960095227B /* AppDelegate.swift in Sources */,
+				8C36811625DD83F60095227B /* Setup.swift in Sources */,
+				8C3680A425DD79960095227B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3680B025DD79970095227B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3680B925DD79970095227B /* PasswordlessAuthDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3680BB25DD79970095227B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3680C425DD79970095227B /* PasswordlessAuthDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C3680B625DD79970095227B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C36809D25DD79960095227B /* PasswordlessAuthDemo */;
+			targetProxy = 8C3680B525DD79970095227B /* PBXContainerItemProxy */;
+		};
+		8C3680C125DD79970095227B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C36809D25DD79960095227B /* PasswordlessAuthDemo */;
+			targetProxy = 8C3680C025DD79970095227B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C3680A725DD79960095227B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C3680A825DD79960095227B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C3680AC25DD79970095227B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C3680AD25DD79970095227B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C3680C625DD79970095227B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C3680C725DD79970095227B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C3680C925DD79970095227B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D687581610E5F36D6118264 /* Pods-PasswordlessAuthDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PasswordlessAuthDemo/PasswordlessAuthDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGJDRSSSYP;
+				INFOPLIST_FILE = PasswordlessAuthDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masatotakamura.PasswordlessAuthDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8C3680CA25DD79970095227B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B148F52295F78CF9BB54FAF6 /* Pods-PasswordlessAuthDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PasswordlessAuthDemo/PasswordlessAuthDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGJDRSSSYP;
+				INFOPLIST_FILE = PasswordlessAuthDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masatotakamura.PasswordlessAuthDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8C3680CC25DD79970095227B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4706113E3604F711F7D1D6C6 /* Pods-PasswordlessAuthDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGJDRSSSYP;
+				INFOPLIST_FILE = PasswordlessAuthDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masatotakamura.PasswordlessAuthDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasswordlessAuthDemo.app/PasswordlessAuthDemo";
+			};
+			name = Debug;
+		};
+		8C3680CD25DD79970095227B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C982268C5CBF76D746B0C44A /* Pods-PasswordlessAuthDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGJDRSSSYP;
+				INFOPLIST_FILE = PasswordlessAuthDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masatotakamura.PasswordlessAuthDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasswordlessAuthDemo.app/PasswordlessAuthDemo";
+			};
+			name = Release;
+		};
+		8C3680CF25DD79970095227B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 118DB517E01A9F9613F99929 /* Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGJDRSSSYP;
+				INFOPLIST_FILE = PasswordlessAuthDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masatotakamura.PasswordlessAuthDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PasswordlessAuthDemo;
+			};
+			name = Debug;
+		};
+		8C3680D025DD79970095227B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8348BFD7C683FDCE95160A1B /* Pods-PasswordlessAuthDemo-PasswordlessAuthDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGJDRSSSYP;
+				INFOPLIST_FILE = PasswordlessAuthDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masatotakamura.PasswordlessAuthDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PasswordlessAuthDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C36809925DD79960095227B /* Build configuration list for PBXProject "PasswordlessAuthDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3680C625DD79970095227B /* Debug */,
+				8C3680C725DD79970095227B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C3680C825DD79970095227B /* Build configuration list for PBXNativeTarget "PasswordlessAuthDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3680C925DD79970095227B /* Debug */,
+				8C3680CA25DD79970095227B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C3680CB25DD79970095227B /* Build configuration list for PBXNativeTarget "PasswordlessAuthDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3680CC25DD79970095227B /* Debug */,
+				8C3680CD25DD79970095227B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C3680CE25DD79970095227B /* Build configuration list for PBXNativeTarget "PasswordlessAuthDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3680CF25DD79970095227B /* Debug */,
+				8C3680D025DD79970095227B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C36809625DD79960095227B /* Project object */;
+}
