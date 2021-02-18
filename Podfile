@@ -10,6 +10,7 @@ target 'PasswordlessAuthDemo' do
 	pod 'Firebase/Auth'
 	pod 'Firebase/Analytics'
 	pod 'Firebase/DynamicLinks'
+	pod 'JGProgressHUD'
 
 
   target 'PasswordlessAuthDemoTests' do

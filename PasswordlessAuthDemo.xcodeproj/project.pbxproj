@@ -20,6 +20,9 @@
 		8C3680DB25DD7A250095227B /* SendEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3680DA25DD7A250095227B /* SendEmailViewController.swift */; };
 		8C3680E325DD7B320095227B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C3680E225DD7B320095227B /* GoogleService-Info.plist */; };
 		8C36811625DD83F60095227B /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C36811525DD83F60095227B /* Setup.swift */; };
+		8C36818E25DE0A1A0095227B /* ExtensionUiviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C36818D25DE0A1A0095227B /* ExtensionUiviewController.swift */; };
+		8C3681D925DE10A50095227B /* Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3681D825DE10A50095227B /* Hud.swift */; };
+		8C3681F525DE19790095227B /* ExtensionUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3681F425DE19790095227B /* ExtensionUIApplication.swift */; };
 		FF37B3082F6683EF3EFFEE75 /* Pods_PasswordlessAuthDemo_PasswordlessAuthDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F132FD9AB7E05C6A1BB3A6D6 /* Pods_PasswordlessAuthDemo_PasswordlessAuthDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +67,9 @@
 		8C3680E225DD7B320095227B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8C36810D25DD7FAA0095227B /* PasswordlessAuthDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PasswordlessAuthDemo.entitlements; sourceTree = "<group>"; };
 		8C36811525DD83F60095227B /* Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
+		8C36818D25DE0A1A0095227B /* ExtensionUiviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUiviewController.swift; sourceTree = "<group>"; };
+		8C3681D825DE10A50095227B /* Hud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hud.swift; sourceTree = "<group>"; };
+		8C3681F425DE19790095227B /* ExtensionUIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIApplication.swift; sourceTree = "<group>"; };
 		B148F52295F78CF9BB54FAF6 /* Pods-PasswordlessAuthDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordlessAuthDemo.release.xcconfig"; path = "Target Support Files/Pods-PasswordlessAuthDemo/Pods-PasswordlessAuthDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C982268C5CBF76D746B0C44A /* Pods-PasswordlessAuthDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordlessAuthDemoTests.release.xcconfig"; path = "Target Support Files/Pods-PasswordlessAuthDemoTests/Pods-PasswordlessAuthDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		E7422F3940632A3C5F02D766 /* Pods_PasswordlessAuthDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordlessAuthDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				8C3680A025DD79960095227B /* PasswordlessAuthDemo */,
-				8C36811425DD83E40095227B /* Helper */,
 				8C3680B725DD79970095227B /* PasswordlessAuthDemoTests */,
 				8C3680C225DD79970095227B /* PasswordlessAuthDemoUITests */,
 				8C36809F25DD79960095227B /* Products */,
@@ -134,6 +139,8 @@
 				8C3680AC25DD79970095227B /* LaunchScreen.storyboard */,
 				8C3680AF25DD79970095227B /* Info.plist */,
 				8C3680E225DD7B320095227B /* GoogleService-Info.plist */,
+				8C36811425DD83E40095227B /* Helper */,
+				8C36818C25DE09E40095227B /* Extension */,
 			);
 			path = PasswordlessAuthDemo;
 			sourceTree = "<group>";
@@ -160,8 +167,18 @@
 			isa = PBXGroup;
 			children = (
 				8C36811525DD83F60095227B /* Setup.swift */,
+				8C3681D825DE10A50095227B /* Hud.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		8C36818C25DE09E40095227B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8C36818D25DE0A1A0095227B /* ExtensionUiviewController.swift */,
+				8C3681F425DE19790095227B /* ExtensionUIApplication.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		9EEE47038101AB49EAA45135 /* Pods */ = {
@@ -429,7 +446,10 @@
 				8C3680A625DD79960095227B /* WelcomeViewController.swift in Sources */,
 				8C3680DB25DD7A250095227B /* SendEmailViewController.swift in Sources */,
 				8C3680A225DD79960095227B /* AppDelegate.swift in Sources */,
+				8C3681D925DE10A50095227B /* Hud.swift in Sources */,
 				8C36811625DD83F60095227B /* Setup.swift in Sources */,
+				8C36818E25DE0A1A0095227B /* ExtensionUiviewController.swift in Sources */,
+				8C3681F525DE19790095227B /* ExtensionUIApplication.swift in Sources */,
 				8C3680A425DD79960095227B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
