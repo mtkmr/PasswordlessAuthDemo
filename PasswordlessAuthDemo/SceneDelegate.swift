@@ -12,17 +12,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     
-    
-    
-    
     func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
         print(userActivity.webpageURL!)
         
         guard let url = userActivity.webpageURL else { return }
         let link = url.absoluteString
+        //メールのリンクから来たときのみ呼ばれる
         if Auth.auth().isSignIn(withEmailLink: link) {
             guard let email = UserDefaults.standard.value(forKey: Setup.kEmail) as? String else {
-                
                 print("Error signing in: email does not exist")
                 return
             }
@@ -42,15 +39,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 let uid = auth.user.uid
                 print("Successfully signed in user with uid: \(uid)")
                 print("ログイン成功")
+                UserDefaults.standard.setValue(true, forKey: "IsLogin")
             }
         }
     }
     
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+       
         
     }
     

@@ -30,14 +30,14 @@ class WelcomeViewController: UIViewController {
                 //サインインしていないとき
                 print("User is nil")
                 Service.authState = .signedOut
-                self.navigationController?.title = "Profile"
+                self.navigationItem.title = "Profile"
                 self.signInSignOutButton.setTitle("Sign In", for: .normal)
             }
             if let user = user, let email = user.email {
                 //ユーザーがサインインしているとき
                 print("email: \(email)のユーザーがいます")
                 Service.authState = .signedIn
-                self.navigationController?.title = email
+                self.navigationItem.title = email
                 self.signInSignOutButton.setTitle("Sign Out", for: .normal)
             }
             
@@ -49,7 +49,9 @@ class WelcomeViewController: UIViewController {
                 if UIApplication.shared.canOpenURL(url) {
                     UIApplication.shared.open(url)
                 } else {
-                    print("Could not open url.")
+                    print("メールアプリURLが開けません。")
+                    let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    showAlert(title: "メールアプリが開けません。", message: "メールをご確認ください。", actions: [defaultAction])
                 }
             }
         }
@@ -84,7 +86,7 @@ class WelcomeViewController: UIViewController {
         let auth = Auth.auth()
         do {
             try auth.signOut()
-            Hud.handle(hud, with: HudInfo(type: .success, text: "Success", detailText: "Successfully signed out"))
+            Hud.handle(hud, with: HudInfo(type: .success, text: "ログアウト成功", detailText: "ログアウトしました"))
         } catch let err {
             print(err.localizedDescription)
             Hud.handle(hud, with: HudInfo(type: .error, text: "Error", detailText: err.localizedDescription))
