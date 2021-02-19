@@ -6,9 +6,16 @@
 //
 
 import UIKit
+import Firebase
 
 class WelcomeViewController: UIViewController {
-
+    
+    var authStateDidChangeListenerHandle: AuthStateDidChangeListenerHandle?
+    
+    var hud = Hud.create()
+    
+    @IBOutlet weak var signInSignOutButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -16,6 +23,25 @@ class WelcomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        //認証状態をリアルタイムに取得
+        authStateDidChangeListenerHandle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            if user == nil {
+                //サインインしていないとき
+                print("User is nil")
+                Service.authState = .signedOut
+                self.navigationController?.title = "Profile"
+                self.signInSignOutButton.setTitle("Sign In", for: .normal)
+            }
+            if let user = user, let email = user.email {
+                //ユーザーがサインインしているとき
+                print("email: \(email)のユーザーがいます")
+                Service.authState = .signedIn
+                self.navigationController?.title = email
+                self.signInSignOutButton.setTitle("Sign Out", for: .normal)
+            }
+            
+        }
         
         if Setup.shouldOpenMailApp {
             Setup.shouldOpenMailApp = false
@@ -27,6 +53,47 @@ class WelcomeViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        //remove authStateDidChangeListenerHandle
+        guard let authStateDidChangeListenerHandle = authStateDidChangeListenerHandle else { return }
+        Auth.auth().removeStateDidChangeListener(authStateDidChangeListenerHandle)
+        
+    }
+    
+    
+    @IBAction func signInSignOutButtonTapped(_ sender: UIButton) {
+        
+        switch Service.authState {
+        case .signedIn:
+            signOut()
+        case .signedOut:
+            goToSendEmailViewController()
+        }
+        
+    }
+    
+    private func signOut() {
+        //サインアウト
+        let detailText = "Signing out..."
+        Hud.handle(hud, with: HudInfo(type: .show, text: "Working", detailText: detailText))
+        
+        let auth = Auth.auth()
+        do {
+            try auth.signOut()
+            Hud.handle(hud, with: HudInfo(type: .success, text: "Success", detailText: "Successfully signed out"))
+        } catch let err {
+            print(err.localizedDescription)
+            Hud.handle(hud, with: HudInfo(type: .error, text: "Error", detailText: err.localizedDescription))
+        }
+    }
+    
+    private func goToSendEmailViewController() {
+        let sendEmailViewController = storyboard?.instantiateViewController(identifier: "SendEmailViewController") as! SendEmailViewController
+        navigationController?.pushViewController(sendEmailViewController, animated: true)
     }
 
 

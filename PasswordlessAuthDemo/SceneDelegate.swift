@@ -6,19 +6,54 @@
 //
 
 import UIKit
+import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    
+    
+    
+    
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        print(userActivity.webpageURL!)
+        
+        guard let url = userActivity.webpageURL else { return }
+        let link = url.absoluteString
+        if Auth.auth().isSignIn(withEmailLink: link) {
+            guard let email = UserDefaults.standard.value(forKey: Setup.kEmail) as? String else {
+                
+                print("Error signing in: email does not exist")
+                return
+            }
+            //ログイン処理
+            Auth.auth().signIn(withEmail: email, link: link) { (auth, err) in
+                if let err = err {
+                    print(err.localizedDescription)
+                    print("ログイン失敗")
+                    return
+                }
+                
+                guard let auth = auth else {
+                    print("Error signing in.")
+                    return
+                }
+                
+                let uid = auth.user.uid
+                print("Successfully signed in user with uid: \(uid)")
+                print("ログイン成功")
+            }
+        }
+    }
+    
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        
     }
-
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

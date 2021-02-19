@@ -23,6 +23,8 @@
 		8C36818E25DE0A1A0095227B /* ExtensionUiviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C36818D25DE0A1A0095227B /* ExtensionUiviewController.swift */; };
 		8C3681D925DE10A50095227B /* Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3681D825DE10A50095227B /* Hud.swift */; };
 		8C3681F525DE19790095227B /* ExtensionUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3681F425DE19790095227B /* ExtensionUIApplication.swift */; };
+		8C3682B725DE76DD0095227B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3682B625DE76DD0095227B /* Service.swift */; };
+		8C3683A925DF782D0095227B /* infoPlistParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3683A825DF782D0095227B /* infoPlistParser.swift */; };
 		FF37B3082F6683EF3EFFEE75 /* Pods_PasswordlessAuthDemo_PasswordlessAuthDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F132FD9AB7E05C6A1BB3A6D6 /* Pods_PasswordlessAuthDemo_PasswordlessAuthDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		8C36818D25DE0A1A0095227B /* ExtensionUiviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUiviewController.swift; sourceTree = "<group>"; };
 		8C3681D825DE10A50095227B /* Hud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hud.swift; sourceTree = "<group>"; };
 		8C3681F425DE19790095227B /* ExtensionUIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIApplication.swift; sourceTree = "<group>"; };
+		8C3682B625DE76DD0095227B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		8C3683A825DF782D0095227B /* infoPlistParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoPlistParser.swift; sourceTree = "<group>"; };
 		B148F52295F78CF9BB54FAF6 /* Pods-PasswordlessAuthDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordlessAuthDemo.release.xcconfig"; path = "Target Support Files/Pods-PasswordlessAuthDemo/Pods-PasswordlessAuthDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C982268C5CBF76D746B0C44A /* Pods-PasswordlessAuthDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordlessAuthDemoTests.release.xcconfig"; path = "Target Support Files/Pods-PasswordlessAuthDemoTests/Pods-PasswordlessAuthDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		E7422F3940632A3C5F02D766 /* Pods_PasswordlessAuthDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordlessAuthDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +172,8 @@
 			children = (
 				8C36811525DD83F60095227B /* Setup.swift */,
 				8C3681D825DE10A50095227B /* Hud.swift */,
+				8C3682B625DE76DD0095227B /* Service.swift */,
+				8C3683A825DF782D0095227B /* infoPlistParser.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -448,7 +454,9 @@
 				8C3680A225DD79960095227B /* AppDelegate.swift in Sources */,
 				8C3681D925DE10A50095227B /* Hud.swift in Sources */,
 				8C36811625DD83F60095227B /* Setup.swift in Sources */,
+				8C3682B725DE76DD0095227B /* Service.swift in Sources */,
 				8C36818E25DE0A1A0095227B /* ExtensionUiviewController.swift in Sources */,
+				8C3683A925DF782D0095227B /* infoPlistParser.swift in Sources */,
 				8C3681F525DE19790095227B /* ExtensionUIApplication.swift in Sources */,
 				8C3680A425DD79960095227B /* SceneDelegate.swift in Sources */,
 			);
@@ -556,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -611,7 +619,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
